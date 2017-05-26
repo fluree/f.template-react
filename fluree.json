@@ -7,5 +7,12 @@
   "url": "https://flur.ee",
 
   "route": {"path": "/template-react"},
-  "dependencies": []
+  "dependencies": [],
+
+  "action": {
+    "fluree.tempate-react.echo": {
+      "doc": "Echo back a string",
+      "spec": ["string", "boolean"]
+    }
+  }
 }

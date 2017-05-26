@@ -7,15 +7,15 @@ const localStorageKey = instanceURL + '/login';
 
 function getInstanceName(url) {
   url = url || window.location.hostname;
-  const match = url.match(/([^./]+)\.flur\.ee/)[1];
-  return match || process.env.REACT_APP_INSTANCE;
+  const [_, instance] = url.match(/([^./]+)\.flur\.ee/) || [];
+  return instance || process.env.REACT_APP_INSTANCE;
 }
 
 const savedSession = localStorage.getItem(localStorageKey) || {};
 
 const conn = ReactConnect({
   log: false,
-  url: instanceURL,
+  url: isProduction ? window.location.origin : 'https://' + process.env.REACT_APP_INSTANCE,
   instance: getInstanceName(instanceURL),
   token: savedSession.token,
   user: savedSession.user,

@@ -1,8 +1,8 @@
 {
-  "name": "coreui-react",
+  "name": "template-react",
   "version": "1.0.0-alpha.5",
   "private": true,
-  "homepage": ".",
+  "homepage": "/",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.0",
@@ -10,7 +10,11 @@
     "react-scripts": "0.9.5"
   },
   "dependencies": {
+    "body-parser": "^1.17.2",
     "chart.js": "2.5.0",
+    "express": "^4.15.3",
+    "fluree-connector": "file:../nodejs-connector",
+    "fql-react": "1.0.2",
     "react": "^15.5.4",
     "react-addons-css-transition-group": "15.5.2",
     "react-addons-transition-group": "15.5.2",
@@ -18,13 +22,21 @@
     "react-chartjs-2": "2.0.5",
     "react-dom": "15.5.4",
     "react-router": "3.0.5",
-    "reactstrap": "4.5.0",
-    "fql-react": "1.0.2"
+    "reactstrap": "4.5.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "server": "node index.js",
+    "publish": "fluree publish",
+    "deploy": "fluree deploy"
+  },
+  "fluree": {
+    "language": "nodejs7",
+    "tag": "release",
+    "memory": 64,
+    "shared": true
   }
 }

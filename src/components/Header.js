@@ -14,7 +14,7 @@ class Header extends Component {
   }
 
   toggle(e) {
-    e.preventDefault();
+    e && e.preventDefault();
     this.setState({
       dropdownOpen: !this.state.dropdownOpen
     });
