@@ -2,7 +2,7 @@
   "name": "template-react",
   "version": "1.0.0-alpha.5",
   "private": true,
-  "homepage": "/",
+  "homepage": "/template-react",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.0",
