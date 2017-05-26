@@ -1,6 +1,6 @@
 {
   "organization":"fluree",
-  "application":"tempate-react",
+  "application":"template-react",
   "version":"1",
 
   "doc": "Fluree user interface template for React.",
