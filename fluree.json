@@ -1,0 +1,11 @@
+{
+  "organization":"fluree",
+  "application":"tempate-react",
+  "version":"1",
+
+  "doc": "Fluree user interface template for React.",
+  "url": "https://flur.ee",
+
+  "route": {"path": "/template-react"},
+  "dependencies": []
+}
